@@ -1,0 +1,133 @@
+unique_name: measurement_acquisition_mapping_dim
+object_type: dimension
+label: measurement_acquisition_mapping_dim
+hierarchies:
+  - unique_name: is_cumulative Hierarchy
+    label: is_cumulative Hierarchy
+    levels:
+      - unique_name: measurement_acquisition_uid
+        secondary_attributes:
+          - unique_name: bu_id
+            label: bu_id
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - bu_id
+            name_column: bu_id
+          - unique_name: bu_name
+            label: bu_name
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - bu_name
+            name_column: bu_name
+          - unique_name: source_system
+            label: source_system
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - source_system
+            name_column: source_system
+          - unique_name: source_system_name
+            label: source_system_name
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - source_system_name
+            name_column: source_system_name
+          - unique_name: building_id
+            label: building_id
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - building_id
+            name_column: building_id
+          - unique_name: sensor_id
+            label: sensor_id
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - sensor_id
+            name_column: sensor_id
+          - unique_name: sensor_name
+            label: sensor_name
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - sensor_name
+            name_column: sensor_name
+          - unique_name: is_cumulative
+            label: is_cumulative
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - is_cumulative
+            name_column: is_cumulative
+          - unique_name: device_id
+            label: device_id
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - device_id
+            name_column: device_id
+          - unique_name: time_interval_minutes
+            label: time_interval_minutes
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - time_interval_minutes
+            name_column: time_interval_minutes
+          - unique_name: location_name
+            label: location_name
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - location_name
+            name_column: location_name
+          - unique_name: value_min
+            label: value_min
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - value_min
+            name_column: value_min
+          - unique_name: value_max
+            label: value_max
+            contains_unique_names: false
+            dataset: measures_acquisition_mapping
+            is_unique_key: false
+            key_columns:
+              - value_max
+            name_column: value_max
+level_attributes:
+  - unique_name: measurement_acquisition_uid
+    label: measurement_acquisition_uid
+    contains_unique_names: false
+    dataset: measures_acquisition_mapping
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - measurement_acquisition_uid
+    name_column: measurement_acquisition_uid
+    sort_column: measurement_acquisition_uid
+  - unique_name: building_contextual_data (1)_empty_attr
+    label: building_contextual_data (1)_empty_attr
+    contains_unique_names: false
+    dataset: building_contextual_data (1)
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+type: standard

@@ -1,0 +1,19 @@
+unique_name: dimproduct_dimension
+object_type: dimension
+label: dimproduct_dimension
+hierarchies:
+  - unique_name: dimproduct_dimension Hierarchy
+    label: Dim_Product_Hierarchy
+    levels:
+      - unique_name: dimproduct_dimension Level
+level_attributes:
+  - unique_name: dimproduct_dimension Level
+    label: dimproduct_dimension Level
+    contains_unique_names: false
+    dataset: dimproduct
+    is_unique_key: false
+    key_columns:
+      - productkey
+    name_column: productkey
+    sort_column: productkey
+type: standard

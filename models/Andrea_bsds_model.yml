@@ -1,0 +1,27 @@
+unique_name: Andrea_bsds_model
+object_type: model
+label: Andrea_bsds_model
+metrics: []
+relationships:
+  - unique_name: measures_italy_empty_dimension
+    from:
+      dataset: measures_italy
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: measures_acquisition_mapping_empty_dimension
+    from:
+      dataset: measures_acquisition_mapping
+      join_columns: []
+    to:
+      dimension: ''
+      level: ''
+  - unique_name: iot_measures_italy_measure_value_to_is_cumulative_datapoint_is_cumulative
+    from:
+      dataset: iot_measures_italy
+      join_columns:
+        - measurement_acquisition_uid
+    to:
+      dimension: is_cumulative
+      level: datapoint_is_cumulative

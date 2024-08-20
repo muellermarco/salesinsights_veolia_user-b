@@ -1,0 +1,6 @@
+unique_name: con_atscale-sales-demo_adventure_pot
+object_type: connection
+label: con_atscale-sales-demo_adventure_pot
+as_connection: gbq
+database: atscale-sales-demo
+schema: adventure_pot

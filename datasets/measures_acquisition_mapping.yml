@@ -1,0 +1,34 @@
+unique_name: measures_acquisition_mapping
+object_type: dataset
+label: measures_acquisition_mapping
+columns:
+  - name: bu_id
+    data_type: string
+  - name: bu_name
+    data_type: string
+  - name: source_system
+    data_type: string
+  - name: source_system_name
+    data_type: string
+  - name: building_id
+    data_type: string
+  - name: sensor_id
+    data_type: string
+  - name: sensor_name
+    data_type: string
+  - name: measurement_acquisition_uid
+    data_type: string
+  - name: is_cumulative
+    data_type: boolean
+  - name: device_id
+    data_type: string
+  - name: time_interval_minutes
+    data_type: long
+  - name: location_name
+    data_type: string
+  - name: value_min
+    data_type: double
+  - name: value_max
+    data_type: double
+connection_id: con_gbl-dat-atscale-dev_atscale_veolia_contextual_data
+table: measures_acquisition_mapping

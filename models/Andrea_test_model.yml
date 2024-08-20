@@ -1,0 +1,25 @@
+unique_name: Andrea_test_model
+object_type: model
+label: Andrea_test_model
+dimensions: []
+metrics:
+  - unique_name: m_factinternetsales_orderquantity_sum
+relationships:
+  - unique_name: factinternetsales_orderquantity_to_dim_date_dim_date Level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderquantity
+    to:
+      dimension: dim_date
+      level: dim_date Level
+  - unique_name: >-
+      factinternetsales_orderquantity_to_dimproduct_dimension_dimproduct_dimension
+      Level
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - orderquantity
+    to:
+      dimension: dimproduct_dimension
+      level: dimproduct_dimension Level
